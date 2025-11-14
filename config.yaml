@@ -1,0 +1,14 @@
+apache:
+  container_name: apache_server
+  image: httpd:latest
+  port: 8080
+
+monitoring_prometheus:
+  container_name: prometheus_server
+  image: prom/prometheus:latest
+  port: 9091
+
+monitoring_grafana:
+  container_name: grafana_server
+  image: grafana/grafana:latest
+  port: 3001
